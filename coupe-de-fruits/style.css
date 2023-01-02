@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+/* HOME */
+
+.grid-col {
+    /* GRID LAYOUT */
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7,14.28vh);
+    place-items: center;
+  }
+   
+  .grid-col img{
+    width: 100px;
+    height: auto;
+  }
+  
+  .spanrow {
+    min-height: 100vh;
+    grid-column: 1/2;
+    grid-row: 1/8;
+    background: #000;
+    opacity: 90%;
+    align-self: center; 
+    justify-self:stretch;
+    font-family:'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    
+    display: grid;
+    align-items:center;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+a#tab-2 :hover {
+    color: rgb(202, 46, 46);
+}
+a#tab-3 :hover {
+    color: rgb(209, 108, 25);
+}
+a#tab-4 :hover {
+    color: rgb(218, 173, 28);
+}
+a#tab-5 :hover {
+    color: rgb(31, 134, 31);
+}
+a#tab-6 :hover {
+    color: rgb(78, 52, 221);
+}
+  
+
+  /* FRUIT */
+
+  body#fraise{
+    background-color:rgb(148, 45, 45);
+    margin: 0;
+  }
+
+  body#orange{
+    background-color:rgb(209, 108, 25);
+    margin: 0;
+  }
+
+  body#banane{
+    background-color:rgb(218, 173, 28);
+    margin: 0;
+  }
+
+  body#papaye{
+    background-color:rgb(31, 134, 31);
+    margin: 0;
+  }
+
+  body#myrtille{
+    background-color:rgb(78, 52, 221);
+    margin: 0;
+  }
+
+  .arrow{
+    padding: 24px;
+    height: 120px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .fruit-grid-col {
+    /* GRID LAYOUT */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 100vh;
+    
+  }
+   
+  .fruit-grid-col img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fruit-spanrow {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-spanrow {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    padding: 200px;
+    background: rgba(0, 0, 0, 0.664);
+    justify-self: center;
+    align-self: stretch;
+    font-family:'Inter', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
